@@ -4,18 +4,18 @@ pStaterpack, //komanya jangan ketinggalan
 //pasang di cmd
 CMD:claim(playerid, params[])
 {
-	if(PlayerInfo[playerid][pStaterpack] == 1) return SendClientMessage(playerid, COLOR_RED, "Anda Sudah Mengambil Staterpack!");
+	if(PlayerInfo[playerid][pStaterpack] == 1) return SendClientMessage(playerid, COLOR_RED, "Lo Udah Ambil Staterpack Bangsat!");
 	{
-	PlayerInfo[playerid][pCash] += 50000;
-	GivePlayerMoney(playerid, 50000);
+	PlayerInfo[playerid][pCash] += 20000000;
+	GivePlayerMoney(playerid, 20000000);
 	OnPlayerUpdateAccountsPer(playerid, "pCash", PlayerInfo[playerid][pCash]);
-	PlayerInfo[playerid][pLevel] += 1;
+	PlayerInfo[playerid][pLevel] += 8;
 	OnPlayerUpdateAccountsPer(playerid, "pLevel", PlayerInfo[playerid][pLevel]);
-	PlayerInfo[playerid][pStaterpack] = 1;
+	PlayerInfo[playerid][pStaterpack] = 8;
 	OnPlayerUpdateAccountsPer(playerid, "pStaterpack", PlayerInfo[playerid][pStaterpack]);
 	SendClientMessage(playerid, COLOR_YELLOW, "You are successful get a starterpack");
-	SendClientMessage(playerid, COLOR_WHITE, "{3BBD44}Level: {FFFFFF}+1");
-	SendClientMessage(playerid, COLOR_WHITE, "{3BBD44}Money: {FFFFFF}+Rp50,000");
+	SendClientMessage(playerid, COLOR_WHITE, "{3BBD44}Level: {FFFFFF}+8");
+	SendClientMessage(playerid, COLOR_WHITE, "{3BBD44}Money: {FFFFFF}+Rp20,000,000");
 	}
     return 1;
 }
